@@ -4,7 +4,7 @@
 
 @font-face {
   font-family: 'Media Sans Extended';
-  src: url('/MidTerm/Source/mediasansextended-bold-TRIAL-BF63c7546bb2aa0.otf')
+  src: url('./Source/mediasansextended-bold-TRIAL-BF63c7546bb2aa0.otf')
     format('opentype');
   font-weight: 700;
   font-style: normal;
@@ -400,5 +400,12 @@ footer p {
 
   .lesson strong {
     font-size: 22px;
+  }
+  .name-heading {
+    margin: 0;
+    padding: 0;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
   }
 }
