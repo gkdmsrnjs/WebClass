@@ -1,0 +1,217 @@
+<!doctype html>
+<html>
+  <title>W6</title>
+  <head>
+    <meta charset="UTF-8" />
+    <style type="text/css">
+      ol li {
+        list-style-type: lower-alpha;
+      }
+      ol {
+        list-style-position: inside;
+      }
+      ul {
+        list-style-position: outside;
+      }
+      li.kor {
+        list-style-type: square;
+      }
+      li.usa {
+        list-style-type: circle;
+      }
+      /* li.usa {
+        list-style-image: url(.gif);
+      }*/
+      #book {
+        width: 50%;
+        min-width: 600px;
+        border-spacing: 8px;
+      }
+      p {
+        background-color: aqua;
+      }
+      p:hover {
+        background-color: yellow;
+        transition: background-color 5s;
+      }
+
+      ul {
+        background-color: brown;
+      }
+      li {
+        background-color: blue;
+      }
+      td {
+        background-color: chartreuse;
+      }
+
+      /* z-index */
+      #w3c_z1 {
+        z-index: 1;
+        position: relative;
+        top: -20px;
+        left: 80px;
+      }
+      #h5_z2 {
+        z-index: 2;
+        position: relative;
+        top: -5px;
+        left: 45px;
+      }
+      #css_z3 {
+        z-index: 3;
+        position: relative;
+        top: 5px;
+        left: 10px;
+      }
+      #w3c_z9 {
+        z-index: 9;
+        position: relative;
+        top: -20px;
+        left: 80px;
+      }
+      #h5_z8 {
+        z-index: 8;
+        position: relative;
+        top: -5px;
+        left: 45px;
+      }
+      #css_z7 {
+        z-index: 7;
+        position: relative;
+        top: 5px;
+        left: 10px;
+      }
+      img[id*='_z'] {
+        border: 1px solid black;
+      }
+
+      /* opacity */
+      #intro-text {
+        background-color: transparent;
+      }
+      #h5_op2 {
+        opacity: 0.2;
+        position: relative;
+        top: 10px;
+        left: 20px;
+      }
+      #h5_op3 {
+        opacity: 0.3;
+        position: relative;
+        top: 10px;
+        left: 50px;
+      }
+      #h5_op5 {
+        opacity: 0.5;
+        position: relative;
+        top: 10px;
+        left: 80px;
+      }
+      #h5_op7 {
+        opacity: 0.7;
+        position: relative;
+        top: 10px;
+        left: 110px;
+      }
+      #h5_op9 {
+        opacity: 0.9;
+        position: relative;
+        top: 10px;
+        left: 140px;
+      }
+
+      /* transform & transition */
+      #rotate-img {
+        position: absolute;
+        top: 100px;
+        right: 50px;
+        border: none;
+        transition: transform 2s;
+      }
+
+      #rotate-img:hover {
+        transform: rotate(360deg);
+      }
+      .intro-section {
+        position: relative;
+      }
+      #title:hover {
+        border: thick double blue;
+        padding: 4px;
+        background-color: yellow;
+        font-size: xx-large;
+        transition:
+          border 4s,
+          background-color 8s;
+      }
+    </style>
+  </head>
+  <body>
+    <p>순서가 없는 목록</p>
+    <ul>
+      <li class="usa">첫번째</li>
+      <li class="kor">두번째</li>
+      <li class="usa">세번째</li>
+    </ul>
+    <p>순서가 있는 목록</p>
+    <ol>
+      <li>첫번째</li>
+      <li>두번째</li>
+      <li>세번째</li>
+    </ol>
+    <table border="1" id="book">
+      <tr>
+        <th>과목</th>
+        <th>책제목</th>
+        <th>저자</th>
+        <th>출판사</th>
+      </tr>
+      <tr>
+        <td rowspan="2">웹프로그래밍</td>
+        <td>HTML5</td>
+        <td>임순범</td>
+        <td>생능</td>
+      </tr>
+      <tr>
+        <td>소셜미디어</td>
+        <td>최윤철</td>
+        <td>생능</td>
+      </tr>
+      <tr>
+        <th>합계</th>
+        <td colspan="3">2권</td>
+      </tr>
+    </table>
+
+    <!-- z-index -->
+    <div class="intro-section">
+      <h3>5.5 새로운 문서 표준 <span id="title">HTML5</span></h3>
+      <p id="intro-text">
+        현재 W3C에서 표준안 개발을 하고 있는 HTML5는 차세대 웹문서 표준안으로
+        많은 관심이 집중되고 있다. 특히, 표준안 개발에 마이크로소프트, 모질라,
+        애플, 구글, 오페라 등 대다수 웹브라우저 개발사가 참여하고 있고, 그동안의
+        웹 기술의 발전을 많이 반영하여 모바일을 포함한 차세대 웹서비스 개발의
+        주요 기술로 주목받고 있다.
+      </p>
+      <!-- transform & transition -->
+      <img src="H5_L.gif" id="rotate-img" width="100" />
+    </div>
+
+    <img src="W3C_L.gif" id="w3c_z1" width="72" height="40" />
+    <img src="H5_L.gif" id="h5_z2" width="54" height="66" />
+    <img src="CSS3_L.gif" id="css_z3" width="54" height="66" />
+    <img src="W3C_L.gif" id="w3c_z9" width="72" height="40" />
+    <img src="H5_L.gif" id="h5_z8" width="54" height="66" />
+    <img src="CSS3_L.gif" id="css_z7" width="54" height="66" />
+
+    <!-- opacity -->
+    <div class="opacity-group">
+      <img src="H5_L.gif" id="h5_op2" width="54" height="66" />
+      <img src="H5_L.gif" id="h5_op3" width="54" height="66" />
+      <img src="H5_L.gif" id="h5_op5" width="54" height="66" />
+      <img src="H5_L.gif" id="h5_op7" width="54" height="66" />
+      <img src="H5_L.gif" id="h5_op9" width="54" height="66" />
+    </div>
+  </body>
+</html>
