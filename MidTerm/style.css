@@ -1,0 +1,404 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Media Sans Extended';
+  src: url('/MidTerm/Source/mediasansextended-bold-TRIAL-BF63c7546bb2aa0.otf')
+    format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.8;
+  letter-spacing: -0.8px;
+  color: #fff;
+  background-color: #111;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.top {
+  position: relative;
+  height: 206px;
+  padding: 48px 44px;
+  background-color: #fff;
+}
+
+.name-image {
+  display: flex;
+  align-items: flex-start;
+  gap: 0;
+  max-width: 860px;
+  color: #000;
+  font-family: 'Media Sans Extended', Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 25.6px;
+}
+
+.letter {
+  display: inline-block;
+  transition: transform 0.35s ease;
+}
+
+.l1 {
+  transform: translateY(0) rotate(1deg);
+}
+.l2 {
+  transform: translateY(36px) rotate(0deg);
+}
+.l3 {
+  transform: translateY(-4px) rotate(0deg);
+}
+.l4 {
+  transform: translateY(8px) rotate(0deg);
+}
+.l5 {
+  transform: translateY(26px) rotate(0deg);
+}
+.l6 {
+  transform: translateY(18px) rotate(-9deg);
+}
+.l7 {
+  transform: translateY(4px) rotate(-8deg);
+}
+.l8 {
+  transform: translateY(-10px) rotate(-9deg);
+}
+.l9 {
+  transform: translateY(-18px) rotate(-9deg);
+}
+
+.name-image:hover .l1 {
+  transform: translateY(-10px) rotate(-8deg);
+}
+.name-image:hover .l2 {
+  transform: translateY(20px) rotate(9deg);
+}
+.name-image:hover .l3 {
+  transform: translateY(14px) rotate(-6deg);
+}
+.name-image:hover .l4 {
+  transform: translateY(-12px) rotate(7deg);
+}
+.name-image:hover .l5 {
+  transform: translateY(38px) rotate(-10deg);
+}
+.name-image:hover .l6 {
+  transform: translateY(2px) rotate(8deg);
+}
+.name-image:hover .l7 {
+  transform: translateY(24px) rotate(-2deg);
+}
+.name-image:hover .l8 {
+  transform: translateY(-24px) rotate(9deg);
+}
+.name-image:hover .l9 {
+  transform: translateY(4px) rotate(-12deg);
+}
+
+.school {
+  position: absolute;
+  right: 49px;
+  bottom: 31px;
+  margin: 0;
+  color: #121212;
+  font-family: 'Inter', Arial, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0;
+}
+
+.dark-section {
+  background-color: #111;
+  color: #fff;
+  padding: 31px 0 55px;
+}
+
+.inner {
+  width: min(100% - 112px, 1168px);
+  margin: 0 auto;
+}
+
+.section-block {
+  margin-bottom: 46px;
+}
+
+h2 {
+  margin: 0 0 23px;
+  padding-left: 6px;
+  border-bottom: 2px solid currentColor;
+  font-family: 'Inter', Arial, sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0;
+}
+
+.dark-section h2 {
+  color: #fff;
+}
+
+.lessons-section h2 {
+  color: #121212;
+}
+
+.about-text {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.table-wrap {
+  width: 100%;
+  overflow-x: auto;
+  border: 1px solid #4a4a4a;
+}
+
+table {
+  width: 100%;
+  min-width: 900px;
+  border-collapse: collapse;
+  font-size: 16px;
+}
+
+th,
+td {
+  height: 70px;
+  padding: 0 33px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+th {
+  height: 35px;
+  padding-top: 0;
+  padding-bottom: 0;
+  border-bottom: 1px solid #4a4a4a;
+  color: #aaa;
+  font-weight: 400;
+}
+
+td:nth-child(1) {
+  width: 18%;
+}
+
+td:nth-child(2) {
+  width: 20%;
+}
+
+td:nth-child(3) {
+  width: 40%;
+}
+
+td:nth-child(4) {
+  width: 22%;
+}
+
+.education {
+  margin-bottom: 0;
+}
+
+.education-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 34px 74px;
+  padding: 26px 6px 0;
+  font-size: 16px;
+}
+
+.education-list p {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  margin: 0;
+}
+
+.education-list span {
+  color: #a9a9a9;
+}
+
+.education-list a {
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  text-decoration-color: currentColor;
+  text-underline-offset: 4px;
+  transition:
+    color 0.2s,
+    text-decoration-color 0.2s;
+}
+
+.education-list a:hover,
+.education-list a:focus-visible {
+  color: #d8d8d8;
+  text-decoration-color: currentColor;
+}
+
+.lessons-section {
+  background-color: #fff;
+  color: #111;
+  padding: 41px 0 73px;
+}
+
+.lesson-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  row-gap: 39px;
+  padding: 40px 64px 0;
+  text-align: center;
+}
+
+.lesson {
+  min-height: 54px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  transition:
+    color 0.2s,
+    transform 0.2s;
+}
+
+.lesson strong {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.lesson span {
+  margin-top: 2px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+a.lesson.active:hover {
+  color: #555;
+  transform: translateY(-4px);
+}
+
+.lesson.muted {
+  color: #cfcfcf;
+  cursor: default;
+}
+
+footer {
+  min-height: 200px;
+  padding: 69px 20px 30px;
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+}
+
+.github-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 23px;
+  font-size: 18px;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.github-link img {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+}
+
+.github-link:hover {
+  color: #d8d8d8;
+}
+
+footer p {
+  margin: 0;
+  font-size: 16px;
+}
+
+@media (max-width: 900px) {
+  .top {
+    min-height: 220px;
+    padding: 36px 24px;
+  }
+
+  .name-image {
+    gap: 0;
+    font-size: 48px;
+    letter-spacing: 12px;
+  }
+
+  .school {
+    position: static;
+    margin-top: 52px;
+    font-size: 18px;
+    text-align: right;
+  }
+
+  .inner {
+    width: min(100% - 40px, 1430px);
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  .education-list {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .lesson-grid {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 26px 10px 0;
+    row-gap: 42px;
+  }
+}
+
+@media (max-width: 520px) {
+  .name-image {
+    gap: 0;
+    font-size: 24px;
+    letter-spacing: 4px;
+  }
+
+  .school {
+    font-size: 15px;
+    text-align: left;
+  }
+
+  .about-text,
+  table,
+  .education-list {
+    font-size: 16px;
+  }
+
+  th,
+  td {
+    padding: 18px 22px;
+  }
+
+  .education-list p {
+    grid-template-columns: 90px 1fr;
+  }
+
+  .lesson-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .lesson strong {
+    font-size: 22px;
+  }
+}
