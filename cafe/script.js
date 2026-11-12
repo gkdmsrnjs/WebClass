@@ -75,7 +75,7 @@ function itemHTML(it){
   const meta='<div class="badges">'+badges.join('')+bean+'</div>';
   return '<article class="item"><div class="row"><div class="names"><h4>'+it.ko+'</h4><span class="en">'+it.en+'</span></div><span class="leader"></span><span class="price">'+won(it.price)+'</span></div>'+
     '<p class="desc">'+it.desc+'</p>'+
-    '<div class="foot">'+meta+'<div class="actions">'+seg+'<button class="add" data-add="'+it.id+'">담기 · Add</button></div></div></article>';
+    '<div class="foot">'+meta+'<div class="actions">'+seg+'<button class="add" data-add="'+it.id+'">담기 Add</button></div></div></article>';
 }
 function renderMenu(){
   const items=M.filter(i=>i.cat===active);
@@ -143,7 +143,7 @@ listEl.addEventListener('click',e=>{
     const id=+ab.dataset.add; const seg=listEl.querySelector('[data-seg="'+id+'"]');
     const temp=seg?seg.querySelector('.on').dataset.t:'';
     addToCart(id,temp);
-    ab.textContent='담았어요 ✓'; setTimeout(()=>{ab.textContent='담기 · Add'},900);
+    ab.textContent='담김 Added'; setTimeout(()=>{ab.textContent='담기 Add'},900);
   }
 });
 
@@ -161,11 +161,11 @@ function renderSheet(){
     sheet.innerHTML='<h3>Your Order <small>주문 요약</small><button class="close" data-close aria-label="닫기">×</button></h3><div class="empty">담은 메뉴가 없어요.<br>Your order is empty.</div>';
     return;
   }
-  const lines=cart.map((l,i)=>{const it=M[l.id];return '<div class="line"><div class="nm">'+it.ko+(l.temp?' · '+l.temp:'')+'<small>'+it.en+'</small></div><div class="lt">'+won(it.price*l.qty)+'</div><div class="qty"><button data-dec="'+i+'" aria-label="줄이기">−</button><span>'+l.qty+'</span><button data-inc="'+i+'" aria-label="늘리기">+</button></div><button class="rm" data-rm="'+i+'">삭제 · Remove</button></div>'}).join('');
+  const lines=cart.map((l,i)=>{const it=M[l.id];return '<div class="line"><div class="nm">'+it.ko+(l.temp?' · '+l.temp:'')+'<small>'+it.en+'</small></div><div class="lt">'+won(it.price*l.qty)+'</div><div class="qty"><button data-dec="'+i+'" aria-label="줄이기">−</button><span>'+l.qty+'</span><button data-inc="'+i+'" aria-label="늘리기">+</button></div><button class="rm" data-rm="'+i+'">삭제 Remove</button></div>'}).join('');
   sheet.innerHTML='<h3>Your Order <small>주문 요약</small><button class="close" data-close aria-label="닫기">×</button></h3>'+lines+
-    '<div class="sum"><span>합계 · Total</span><span>'+won(t)+'원</span></div>'+
+    '<div class="sum"><span>합계 Total</span><span>'+won(t)+'원</span></div>'+
     '<div class="table-field"><label for="tbl">테이블 번호<br><small style="color:var(--taupe)">Table No.</small></label><input id="tbl" inputmode="numeric" maxlength="3" placeholder="예: 7" value="'+esc(tableNo)+'"></div><div class="hint" id="hint"></div>'+
-    '<button class="primary" data-place>주문하기 · Place order</button>'+
+    '<button class="primary" data-place>주문하기 Order</button>'+
     '<p class="demo-note">실제 주문이 아닙니다. 수업 실습용입니다.<br>This is a demo, no real order is placed.</p>';
 }
 sheet.addEventListener('input',e=>{if(e.target.id==='tbl'){tableNo=e.target.value;const h=$('#hint');if(h)h.textContent=''}});
@@ -186,9 +186,9 @@ function showConfirm(){
   const lis=cart.map(l=>{const it=M[l.id];return '<li><span>'+it.ko+(l.temp?' · '+l.temp:'')+' × '+l.qty+'<br><small style="color:var(--taupe);font-family:var(--serif-en);font-style:italic">'+it.en+'</small></span><span>'+won(it.price*l.qty)+'</span></li>'}).join('');
   sheet.innerHTML='<div class="confirm"><h3>Order Summary <small>주문 확인</small><button class="close" data-close aria-label="닫기">×</button></h3>'+
     '<div class="tbl">Table '+esc(tableNo.trim())+' · 테이블 '+esc(tableNo.trim())+'</div><ul>'+lis+'</ul>'+
-    '<div class="sum"><span>합계 · Total</span><span>'+won(t)+'원</span></div>'+
+    '<div class="sum"><span>합계 Total</span><span>'+won(t)+'원</span></div>'+
     '<div class="show-staff">이 화면을 직원에게 보여주세요.<br>Please show this screen to our staff.</div>'+
-    '<button class="primary" data-new>새 주문 · New order</button>'+
+    '<button class="primary" data-new>새 주문 New</button>'+
     '<p class="demo-note">실제 주문이 아닙니다. 수업 실습용입니다.<br>This is a demo, no real order is placed.</p></div>';
 }
 updateBar();
