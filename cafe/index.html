@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Moonlight Café · 달빛 카페</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Noto+Sans+KR:wght@300;400;500;700&family=Noto+Serif+KR:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<script>document.documentElement.classList.add('js')</script>
+
+<header class="header" id="header">
+  <div class="brand">Moonlight Café</div>
+  <button class="menu-btn" data-go="menu">메뉴 · Menu</button>
+</header>
+
+<!-- ================= HERO ================= -->
+<div class="hero" id="top">
+  <svg class="plants" id="plants" viewBox="0 0 1000 420" preserveAspectRatio="xMidYMin slice" aria-hidden="true"></svg>
+  <svg class="palm left" id="palmL" viewBox="0 0 300 420" preserveAspectRatio="xMinYMax meet" aria-hidden="true"></svg>
+  <svg class="palm right" id="palmR" viewBox="0 0 300 420" preserveAspectRatio="xMinYMax meet" aria-hidden="true"></svg>
+
+  <div class="lamp" style="--x:9%;--cord:70px;--w:clamp(64px,15vw,120px);--dur:6.5s;--delay:-1s"><div class="cord"></div><div class="shade"></div><div class="glow"></div></div>
+  <div class="lamp" style="--x:27%;--cord:150px;--w:clamp(80px,19vw,150px);--dur:7.5s;--delay:-3s"><div class="cord"></div><div class="shade"></div><div class="glow"></div></div>
+  <div class="lamp" style="--x:52%;--cord:50px;--w:clamp(56px,12vw,96px);--dur:6s;--delay:-2s"><div class="cord"></div><div class="shade"></div><div class="glow"></div></div>
+  <div class="lamp" style="--x:72%;--cord:120px;--w:clamp(76px,17vw,136px);--dur:8s;--delay:-4s"><div class="cord"></div><div class="shade"></div><div class="glow"></div></div>
+  <div class="lamp" style="--x:90%;--cord:60px;--w:clamp(60px,13vw,104px);--dur:7s;--delay:-.5s"><div class="cord"></div><div class="shade"></div><div class="glow"></div></div>
+
+  <div class="hero-content">
+    <div class="eyebrow">Jeju · Since 2026</div>
+    <h1>Moonlight Café</h1>
+    <div class="ko-name">달빛 카페</div>
+    <div class="hours">오늘 11:00 – 22:00 &nbsp;·&nbsp; Open today 11:00 – 22:00</div>
+    <button class="cta" data-go="menu">메뉴 보기 · View Menu</button>
+  </div>
+</div>
+
+<!-- ================= STORY ================= -->
+<section class="story">
+  <div class="wrap reveal">
+    <div class="kicker">Our Story</div>
+    <hr class="double-rule">
+    <p>제주의 바다 끝, 하루가 느리게 저물어 가는 시간.</p>
+    <p>라탄 조명이 은은하게 켜지고 야자수 그림자가 길어지는 자리에서</p>
+    <p>직접 로스팅한 두 가지 원두와 계절 디저트를 준비해 두었어요.</p>
+    <p>천천히 머물다 가세요.</p>
+    <p class="en">At the edge of Jeju's sea, where the day slowly fades. Under soft rattan lights and the long shadows of palm trees, we serve two house-roasted beans and seasonal desserts. Stay a while.</p>
+  </div>
+</section>
+
+<!-- ================= MOMENTS ================= -->
+<section class="moments">
+  <div class="wrap">
+    <div class="kicker reveal">Moments</div>
+    <div class="moment-grid">
+      <div class="moment reveal">
+        <svg viewBox="0 0 64 64"><path d="M32 4v18"/><path d="M12 44c0-14 9-22 20-22s20 8 20 22z"/><path d="M18 36l8 8M26 30l14 14M36 26l12 12M44 32l6 6"/><path d="M22 52h20"/></svg>
+        <h3>Rattan Light</h3><div class="ko">라탄 조명</div>
+        <p>따뜻한 빛이 천천히 번지는 자리.</p>
+      </div>
+      <div class="moment reveal">
+        <svg viewBox="0 0 64 64"><path d="M32 60V30"/><path d="M32 34C22 34 14 26 12 14c12 0 20 8 20 20z"/><path d="M32 40C42 40 50 32 52 20c-12 0-20 8-20 20z"/><path d="M32 30C28 22 28 14 32 6c4 8 4 16 0 24z"/></svg>
+        <h3>Green Canopy</h3><div class="ko">늘어진 식물</div>
+        <p>천장에서 내려오는 초록빛 그늘.</p>
+      </div>
+      <div class="moment reveal">
+        <svg viewBox="0 0 64 64"><path d="M30 60c2-14 1-26-2-38"/><path d="M28 22c-8-2-16 2-20 10M28 22c-2-8 2-14 10-16M28 22c6-6 14-6 22 0M28 22c8 0 14 6 16 14M28 22c-6 2-12 8-12 16"/></svg>
+        <h3>Palm Shade</h3><div class="ko">야자수 그늘</div>
+        <p>여행 온 듯 느긋한 오후.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= MENU ================= -->
+<section class="menu-sec" id="menu">
+  <div class="wrap">
+    <svg class="logo-cup" viewBox="0 0 64 64" aria-hidden="true"><path d="M24 14c-3-3 3-5 0-9M32 14c-3-3 3-5 0-9M40 14c-3-3 3-5 0-9"/><path d="M12 24h40v8c0 10-8 18-20 18S12 42 12 32z"/><path d="M52 27h4a5 5 0 0 1 0 12h-5"/><path d="M16 58h32"/></svg>
+    <div class="kicker">Menu</div>
+    <h2 class="h2">Menu <small>메뉴 · 주문</small></h2>
+    <hr class="double-rule">
+  </div>
+</section>
+<nav class="tabs" id="tabs"><div class="wrap" id="tabWrap"></div></nav>
+<div class="menu-body"><div class="wrap" id="menuList"></div></div>
+
+<!-- ================= ALLERGY ================= -->
+<section class="allergy">
+  <div class="wrap reveal">
+    <div class="kicker">Allergy Notice</div>
+    <h2 class="h2" style="font-size:30px">알레르기 안내 <small style="display:inline;margin-left:8px;letter-spacing:.04em">Allergy Notice</small></h2>
+    <hr class="double-rule">
+    <p>매장에서 만드는 모든 음식에는 아래 성분이 들어 있거나 접촉할 수 있습니다.<br>Food prepared here may contain or come into contact with the ingredients below.</p>
+    <dl id="allergyList"></dl>
+  </div>
+</section>
+
+<!-- ================= INFO ================= -->
+<section>
+  <div class="wrap reveal">
+    <div class="kicker">Visit</div>
+    <h2 class="h2">Location & Hours <small>오시는 길 · 영업시간</small></h2>
+    <hr class="double-rule">
+    <div class="info-grid">
+      <div class="info">
+        <h3>Location</h3>
+        <p>제주특별자치도 제주시 ○○읍 달빛해안로 12 <span class="en">(예시 주소)</span></p>
+        <p class="en">12 Dalbit-haean-ro, ○○-eup, Jeju-si, Jeju-do (example)</p>
+        <p style="margin-top:10px">064-000-0000 · @moonlight_cafe <span class="en">(예시)</span></p>
+      </div>
+      <div class="info">
+        <h3>Hours</h3>
+        <table>
+          <tr><td>월 수 목 금 · Mon Wed Thu Fri</td><td>11:00 – 22:00</td></tr>
+          <tr><td>토 일 · Sat Sun</td><td>10:00 – 23:00</td></tr>
+          <tr><td>화 · Tue</td><td>휴무 · Closed</td></tr>
+        </table>
+        <p class="en" style="margin-top:8px">라스트 오더 30분 전 · Last order 30 min before closing</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="brand">Moonlight Café · 달빛 카페</div>
+  <p>© 2026 Moonlight Café. 모든 메뉴와 정보는 수업 실습용 가상 내용입니다.<br>All menus and information are fictional, for a class project.</p>
+</footer>
+
+<!-- ================= CART ================= -->
+<div class="cartbar" id="cartbar" role="button" tabindex="0" aria-label="주문 보기">
+  <span><span class="count" id="cartCount">0</span><span class="view">주문 보기 · View order</span></span>
+  <span class="total" id="cartTotal">0</span>
+</div>
+<div class="overlay" id="overlay"></div>
+<div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-label="주문 요약"></div>
+
+<script src="menu.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
