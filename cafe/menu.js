@@ -1,7 +1,6 @@
 /* ================= menu data ================= */
 const A={밀:'Wheat',우유:'Milk',달걀:'Egg',견과류:'Nuts'};
 const TAB=[
-  {k:'sig',en:'Signature',ko:'시그니처'},
   {k:'coffee',en:'Coffee',ko:'커피'},
   {k:'non',en:'Non-Coffee',ko:'논커피'},
   {k:'tea',en:'Tea & Ade',ko:'티·에이드'},
@@ -10,9 +9,9 @@ const TAB=[
 const M=[];
 function m(cat,sub,ko,en,price,temp,bean,acid,al,desc,sig){M.push({id:M.length,cat,sub,ko,en,price,temp,bean,acid,al:al?al.split(','):[],desc,sig:!!sig})}
 // signature
-m('sig','','달빛 라떼','Moonlight Latte',6000,'HI','문 블렌드',0,'우유','은은한 바닐라와 꿀, 달처럼 둥근 우유 거품',1);
-m('sig','','문라이트 크림 커피','Moonlight Cream Coffee',6500,'I','문 블렌드',0,'우유','진한 커피 위에 바닐라 크림을 올린 커피',1);
-m('sig','','선라이즈 토닉','Sunrise Tonic',6000,'I','선라이즈 싱글',3,'','산뜻한 토닉에 에티오피아 원두의 과일향',1);
+m('coffee','','달빛 라떼','Moonlight Latte',6000,'HI','문 블렌드',0,'우유','은은한 바닐라와 꿀, 달처럼 둥근 우유 거품',1);
+m('coffee','','문라이트 크림 커피','Moonlight Cream Coffee',6500,'I','문 블렌드',0,'우유','진한 커피 위에 바닐라 크림을 올린 커피',1);
+m('coffee','','선라이즈 토닉','Sunrise Tonic',6000,'I','선라이즈 싱글',3,'','산뜻한 토닉에 에티오피아 원두의 과일향',1);
 // coffee
 m('coffee','','에스프레소','Espresso',3500,'H','문 블렌드',1,'','진하고 묵직한 한 잔');
 m('coffee','','아메리카노','Americano',4000,'HI','문 블렌드',1,'','고소하고 깔끔한 기본 커피');

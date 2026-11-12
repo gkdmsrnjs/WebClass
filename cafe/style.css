@@ -47,8 +47,7 @@ img,svg{display:block}
 
 .hero-content{position:relative;z-index:5}
 .hero .eyebrow{font-family:var(--serif-en);font-style:italic;font-weight:400;font-size:18px;opacity:.9;letter-spacing:0}
-.hero h1{font-family:var(--serif-en);font-weight:700;font-size:clamp(46px,12vw,92px);line-height:1.05;letter-spacing:-.02em;margin:10px 0 6px}
-.hero .ko-name{font-weight:700;font-size:clamp(18px,4.4vw,26px);line-height:1.5;letter-spacing:-.02em}
+.hero h1{font-family:'Barlow Condensed','Arial Narrow','Helvetica Neue',Arial,sans-serif;font-weight:700;font-size:clamp(54px,16vw,128px);line-height:1;letter-spacing:-.01em;margin:.32em 0 .4em;transform:scaleY(1.45);transform-origin:50% 50%}
 .hero .hours{margin-top:30px;font-size:14px;font-weight:300;line-height:1.8;letter-spacing:-.01em;opacity:.92}
 .cta{display:inline-block;margin-top:30px;padding:14px 36px;border-radius:999px;background:var(--amber);color:var(--charcoal);font-weight:700;letter-spacing:-.02em;line-height:1.5;font-size:16px;transition:transform .25s,box-shadow .25s;box-shadow:0 6px 24px rgba(240,194,117,.35)}
 .cta:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(240,194,117,.5)}
@@ -110,7 +109,7 @@ section{padding:84px 24px}
 .item .foot{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:12px;flex-wrap:wrap}
 .badges{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
 .badge{font-size:11.5px;font-weight:500;letter-spacing:0;padding:2px 9px;border-radius:999px;border:1px solid var(--charcoal);line-height:1.6}
-.badge.sig{background:var(--amber);border-color:var(--amber);font-weight:700}
+.badge.sig{background:var(--amber);border-color:var(--amber);font-weight:700;font-size:10.5px;vertical-align:2px;margin-left:4px;white-space:nowrap}
 .badge.iced{border-color:var(--palm);color:var(--palm)}
 .beaninfo{font-size:12.5px;font-weight:400;line-height:1.6;color:var(--taupe)}
 .actions{display:flex;align-items:center;gap:8px;margin-left:auto}
